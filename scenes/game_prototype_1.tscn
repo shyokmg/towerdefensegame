@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cp0sbmtxh0nsq"]
+
+[ext_resource type="PackedScene" uid="uid://bu3bmwqrgycdo" path="res://scenes/maps/map_set_1.tscn" id="2_7kenn"]
+[ext_resource type="PackedScene" uid="uid://biewmm88ewf26" path="res://scenes/enemy/enemy.tscn" id="2_x1234"]
+[ext_resource type="PackedScene" uid="uid://dal8v04s311w5" path="res://scenes/playerbase.tscn" id="3_x1234"]
+
+[node name="GamePrototype1" type="Node2D" unique_id=1523744316]
+
+[node name="Map_set1" parent="." unique_id=1557099053 instance=ExtResource("2_7kenn")]
+
+[node name="enemy" parent="." unique_id=1370338172 node_paths=PackedStringArray("playerBase") instance=ExtResource("2_x1234")]
+position = Vector2(88, 3)
+playerBase = NodePath("../playerbase")
+
+[node name="playerbase" parent="." unique_id=136772927 instance=ExtResource("3_x1234")]
+position = Vector2(351, 153)
