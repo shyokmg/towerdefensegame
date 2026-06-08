@@ -11,7 +11,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 func makepath() -> void:
-	nav_agent.target_position = playerBase.global_position
+	nav_agent.target_position = Vector2(277,136)
 	
 
 func _on_timer_timeout() -> void:

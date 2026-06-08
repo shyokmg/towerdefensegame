@@ -29,6 +29,7 @@ offset_bottom = 23.00003
 scale = Vector2(0.1, 0.1)
 max_value = 10.0
 step = 1.0
+value = 10.0
 metadata/_edit_use_anchors_ = true
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=997500096]
